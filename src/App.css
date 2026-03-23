@@ -1,0 +1,153 @@
+.main-container {
+  display: flex;
+  flex: 1;
+  padding: 16px;
+  gap: 16px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  width: 30%;
+  background-color: aliceblue;
+  padding-left: 24px;
+}
+
+.left-heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subjects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subject {
+  padding: 4px 20px 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subject:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.subject-selected {
+  background-color: blue;
+  color: #fff;
+}
+
+.right-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.topics-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  min-height: 250px;
+  padding: 16px;
+  background: #fff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.topic-name {
+  font-weight: 700;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: #cbcbcb;
+}
+
+.topic-description {
+  text-align: start;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.chat-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.chat-container {
+  min-height: 300px;
+  width: 250px;
+  overflow: auto;
+  border: 1px solid #cbcbcb;
+  border-radius: 10px;
+  background-color: beige;
+  padding: 10px;
+}
+
+.chat-subjects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.chat-sel-sub {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.chat-sub-with-topics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.topics-heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.empty-message {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
